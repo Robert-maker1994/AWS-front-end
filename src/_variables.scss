@@ -1,0 +1,60 @@
+$form-color: linear-gradient(
+  rgba(255, 255, 255, 0.95)
+  );
+$background-color: linear-gradient(
+    40deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(105, 30, 30, 1) 49%,
+    rgba(120, 84, 34, 1) 100%
+  );
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+@mixin roboto($fontsize) {
+    font-family: "Roboto", sans-serif;
+    font-size: $fontsize;
+}
+@mixin form-container() {
+    background: $form-color;
+    height: auto;
+    padding: 20px;
+   
+ 
+    filter: blur(0px);
+    border-radius: 25%;
+    width: auto;
+    text-align: center;
+    display: block;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.28571429;
+    letter-spacing: .8px;
+    font-size: .875rem;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    transition: all 1s;
+}
+button:hover {
+  color: gray;
+}
+.center {
+  text-align: center;
+ justify-content: center;
+ align-items: center;
+}

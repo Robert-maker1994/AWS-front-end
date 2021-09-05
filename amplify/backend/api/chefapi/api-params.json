@@ -1,0 +1,42 @@
+{
+  "paths": [
+    {
+      "name": "/user",
+      "lambdaFunction": "chefFunction",
+      "privacy": {
+        "private": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/user"
+    }
+  ],
+  "resourceName": "chefapi",
+  "apiName": "chefapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "chefFunction"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 0,
+    "authRoleName": "amplify-chefapp1-dev-164132-authRole",
+    "unAuthRoleName": "amplify-chefapp1-dev-164132-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "chefFunction",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chefapp1-dev-164132-authRole",
+      "UnauthRoleArn": "arn:aws:iam::130944309457:role/amplify-chefapp1-dev-164132-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::130944309457:role/amplify-chefapp1-dev-164132-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-chefapp1-dev-164132-deployment",
+      "UnauthRoleName": "amplify-chefapp1-dev-164132-unauthRole",
+      "StackName": "amplify-chefapp1-dev-164132",
+      "StackId": "arn:aws:cloudformation:eu-west-2:130944309457:stack/amplify-chefapp1-dev-164132/95e28a70-0d96-11ec-bd23-020cc72ab0c6",
+      "AmplifyAppId": "d26ipm96y889o8"
+    },
+    "categories": {
+      "auth": {
+        "chefapp18388f14b": {}
+      },
+      "function": {
+        "chefFunction": {
+          "deploymentBucketName": "amplify-chefapp1-dev-164132-deployment",
+          "s3Key": "amplify-builds/chefFunction-6b44356141612b552f2b-build.zip"
+        }
+      }
+    }
+  }
+}
