@@ -1,0 +1,7 @@
+{
+    "tableName": "chefapptable",
+    "partitionKeyName": "userpoolid",
+    "partitionKeyType": "S",
+    "sortKeyName": "email",
+    "sortKeyType": "S"
+}

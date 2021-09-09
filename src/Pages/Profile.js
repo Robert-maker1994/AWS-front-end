@@ -1,19 +1,26 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect, useContext } from "react";
 import { useHistory } from "react-router";
-import { login } from '../routing/routing';
+import UserContext from "../context/UserContext";
+import PersistentDrawer from "../Nav/Drawer";
+import { login } from "../routing/routing";
 
 function Profile() {
-    const user = useState(localStorage.getItem("user"));
-   console.log(user)
-   let history = useHistory()
-    return (
+  //Pass the User context.
+  const { user, setUser } = useContext(UserContext);
+  let history = useHistory();
+  console.log(user)
+  return (
+    <div>
+      {user === null ? (
+        history.push(login)
+      ) : (
         <div>
-{   !user ? history.push(login) :      <h1>ello</h1>
- 
- 
-}
+        <PersistentDrawer />
+          <h1>profile</h1>
         </div>
-    )
+      )}
+    </div>
+  );
 }
 
-export default Profile
+export default Profile;

@@ -2,7 +2,7 @@
   "paths": [
     {
       "name": "/user",
-      "lambdaFunction": "chefFunction",
+      "lambdaFunction": "chefapp08",
       "privacy": {
         "private": true,
         "auth": [
@@ -16,23 +16,23 @@
       "policyResourceName": "/user"
     }
   ],
-  "resourceName": "chefapi",
-  "apiName": "chefapi",
+  "resourceName": "chefapp08",
+  "apiName": "chefapp08",
   "functionArns": [
     {
-      "lambdaFunction": "chefFunction"
+      "lambdaFunction": "chefapp08"
     }
   ],
   "privacy": {
     "auth": 1,
     "unauth": 0,
-    "authRoleName": "amplify-chefapp1-dev-164132-authRole",
-    "unAuthRoleName": "amplify-chefapp1-dev-164132-unauthRole"
+    "authRoleName": "amplify-chefapp08-dev-141245-authRole",
+    "unAuthRoleName": "amplify-chefapp08-dev-141245-unauthRole"
   },
   "dependsOn": [
     {
       "category": "function",
-      "resourceName": "chefFunction",
+      "resourceName": "chefapp08",
       "attributes": [
         "Name",
         "Arn"

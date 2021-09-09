@@ -1,24 +1,28 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-chefapp1-dev-164132-authRole",
-      "UnauthRoleArn": "arn:aws:iam::130944309457:role/amplify-chefapp1-dev-164132-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::130944309457:role/amplify-chefapp1-dev-164132-authRole",
+      "AuthRoleName": "amplify-chefapp08-dev-141245-authRole",
+      "UnauthRoleArn": "arn:aws:iam::130944309457:role/amplify-chefapp08-dev-141245-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::130944309457:role/amplify-chefapp08-dev-141245-authRole",
       "Region": "eu-west-2",
-      "DeploymentBucketName": "amplify-chefapp1-dev-164132-deployment",
-      "UnauthRoleName": "amplify-chefapp1-dev-164132-unauthRole",
-      "StackName": "amplify-chefapp1-dev-164132",
-      "StackId": "arn:aws:cloudformation:eu-west-2:130944309457:stack/amplify-chefapp1-dev-164132/95e28a70-0d96-11ec-bd23-020cc72ab0c6",
-      "AmplifyAppId": "d26ipm96y889o8"
+      "DeploymentBucketName": "amplify-chefapp08-dev-141245-deployment",
+      "UnauthRoleName": "amplify-chefapp08-dev-141245-unauthRole",
+      "StackName": "amplify-chefapp08-dev-141245",
+      "StackId": "arn:aws:cloudformation:eu-west-2:130944309457:stack/amplify-chefapp08-dev-141245/779f0ad0-10a6-11ec-ae3f-0af48b1eb910",
+      "AmplifyAppId": "dsho1zqyfdv4v"
     },
     "categories": {
       "auth": {
-        "chefapp18388f14b": {}
+        "chefapp085aaa3707": {}
       },
       "function": {
-        "chefFunction": {
-          "deploymentBucketName": "amplify-chefapp1-dev-164132-deployment",
-          "s3Key": "amplify-builds/chefFunction-6b44356141612b552f2b-build.zip"
+        "chefapptableTrigger9cc5c126": {
+          "deploymentBucketName": "amplify-chefapp08-dev-141245-deployment",
+          "s3Key": "amplify-builds/chefapptableTrigger9cc5c126-4d59736f766549737a79-build.zip"
+        },
+        "chefapp08": {
+          "deploymentBucketName": "amplify-chefapp08-dev-141245-deployment",
+          "s3Key": "amplify-builds/chefapp08-5172784a6e2b574e7565-build.zip"
         }
       }
     }

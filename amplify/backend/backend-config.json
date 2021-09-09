@@ -1,6 +1,6 @@
 {
   "auth": {
-    "chefapp18388f14b": {
+    "chefapp085aaa3707": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -23,21 +23,31 @@
       }
     }
   },
-  "storage": {
-    "userDB": {
-      "service": "DynamoDB",
-      "providerPlugin": "awscloudformation"
-    }
-  },
   "function": {
-    "chefFunction": {
+    "chefapptableTrigger9cc5c126": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "chefapptable",
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ]
+        }
+      ]
+    },
+    "chefapp08": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
       "dependsOn": [
         {
           "category": "storage",
-          "resourceName": "userDB",
+          "resourceName": "chefapptable",
           "attributes": [
             "Name",
             "Arn"
@@ -50,14 +60,20 @@
       ]
     }
   },
+  "storage": {
+    "chefapptable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
+    }
+  },
   "api": {
-    "chefapi": {
+    "chefapp08": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "chefFunction",
+          "resourceName": "chefapp08",
           "attributes": [
             "Name",
             "Arn"

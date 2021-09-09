@@ -17,15 +17,15 @@ AWS.config.update({ region: process.env.TABLE_REGION });
 
 const dynamodb = new AWS.DynamoDB.DocumentClient();
 
-let tableName = "UserDBName";
+let tableName = "chefapptable";
 if(process.env.ENV && process.env.ENV !== "NONE") {
   tableName = tableName + '-' + process.env.ENV;
 }
 
 const userIdPresent = true; // TODO: update in case is required to use that definition
-const partitionKeyName = "email";
+const partitionKeyName = "userpoolid";
 const partitionKeyType = "S";
-const sortKeyName = "username";
+const sortKeyName = "email";
 const sortKeyType = "S";
 const hasSortKey = sortKeyName !== "";
 const path = "/user";

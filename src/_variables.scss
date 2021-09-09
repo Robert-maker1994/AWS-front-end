@@ -30,7 +30,7 @@ $background-color: linear-gradient(
     display: block;
 }
 
-button {
+.button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -50,9 +50,7 @@ button {
     width: 50%;
     transition: all 1s;
 }
-button:hover {
-  color: gray;
-}
+
 .center {
   text-align: center;
  justify-content: center;

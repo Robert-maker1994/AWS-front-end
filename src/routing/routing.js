@@ -8,7 +8,7 @@ import {
 
 const loginPage =  lazy(() => import("../Pages/Login.js"));
 const registerPage = lazy(() => import("../Pages/Register.js"));
-// const homePage = lazy(() => import("../Pages/Home"));
+const homePage = lazy(() => import("../Pages/Home"));
 const profilePage = lazy(() => import("../Pages/Profile"));
 
 
@@ -17,7 +17,7 @@ export const Home = `/home`;
 export const profile = '/profile';
 export const registerForm = '/register'
 
-const Routing = ({token}) => {
+const Routing = () => {
  
 
     return (
@@ -25,7 +25,7 @@ const Routing = ({token}) => {
           <Route exact  path={login} component={loginPage}  />
            <Route path={registerForm} component={registerPage} />
        
-            {/* <Route  path={Home} component={homePage}  /> */}
+            <Route  path={Home} component={homePage}  />
             <Route path={profile} component={profilePage} />
       </Switch>
         

@@ -11,7 +11,7 @@
     "env": {
       "Type": "String"
     },
-    "chefapi": {
+    "chefapp08": {
       "Type": "String"
     }
   },
@@ -52,7 +52,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -82,7 +82,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -112,7 +112,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -142,7 +142,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -172,7 +172,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -202,7 +202,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -232,7 +232,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -262,7 +262,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -292,7 +292,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {
@@ -322,7 +322,7 @@
                       },
                       ":",
                       {
-                        "Ref": "chefapi"
+                        "Ref": "chefapp08"
                       },
                       "/",
                       {

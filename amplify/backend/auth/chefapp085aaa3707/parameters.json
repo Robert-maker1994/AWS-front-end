@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "chefapp18388f14b_identitypool_8388f14b",
+    "identityPoolName": "chefapp085aaa3707_identitypool_5aaa3707",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "chefap8388f14b",
-    "userPoolName": "chefapp18388f14b_userpool_8388f14b",
+    "resourceNameTruncated": "chefap5aaa3707",
+    "userPoolName": "chefapp085aaa3707_userpool_5aaa3707",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "chefap8388f14b_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "chefap5aaa3707_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "8388f14b",
-    "resourceName": "chefapp18388f14b",
+    "sharedId": "5aaa3707",
+    "resourceName": "chefapp085aaa3707",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -48,14 +48,16 @@
             "Arn"
         ]
     },
-    "useDefault": "default",
-    "triggers": "{}",
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
+    "hostedUIDomainName": "chefapp08",
+    "authProvidersUserPool": [
+        "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3001/home/\"],\"LogoutURLs\":[\"http://localhost:3001/logout/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "breakCircularDependency": false,
-    "permissions": [],
+    "usernameCaseSensitive": false,
     "dependsOn": []
 }

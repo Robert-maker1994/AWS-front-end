@@ -30,7 +30,8 @@ export default function SigninDialog({ history, handleClose, username, open }) {
     try {
       
       // Auth the user via email
-      await Auth.confirmSignUp(username, code);
+     const data =  await Auth.confirmSignUp(username, code);
+     console.log(data)
       //Laoding img for affect
       setLoading(true);
       

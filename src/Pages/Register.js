@@ -28,14 +28,14 @@ const Register = () => {
   const onsubmit = async () => {
     try {
       /*  Adding the user to the cognito pool */
-     const { user } = await Auth.signUp({
-          username,
-          password,
-          attributes
+      const { user } = await Auth.signUp({
+        username,
+        password,
+        attributes,
       });
-      console.log(user)
+      console.log(user);
       //  Adding the data to dynamodb
-      setOpen(true)
+      setOpen(true);
       setUnsuccessfulr(false);
     } catch (error) {
       console.log("error signing up:", error);
@@ -50,7 +50,7 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className="background">
       <Grid className="container">
         <div className="form-container">
           <h1>Register</h1>
@@ -95,12 +95,17 @@ const Register = () => {
             />
           </Grid>
           <Grid>
-            <button type="submit" size={"medium"} onClick={onsubmit}>
+            <button
+              className="button"
+              type="submit"
+              size={"medium"}
+              onClick={onsubmit}
+            >
               Register
             </button>
 
             <Link to={login}>
-              <button> Already Signed up</button>
+              <button className="button"> Already Signed up</button>
             </Link>
 
             {!Unsuccessful ? (

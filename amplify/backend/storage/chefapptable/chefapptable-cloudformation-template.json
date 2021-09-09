@@ -45,6 +45,11 @@
                   }  , 
                   
                   {
+                      "AttributeName": "userpoolid",
+                      "AttributeType": "S"
+                  }  , 
+                  
+                  {
                       "AttributeName": "email",
                       "AttributeType": "S"
                   } 
@@ -53,12 +58,12 @@
                 "KeySchema": [
                   
                   {
-                    "AttributeName": "email",
+                    "AttributeName": "userpoolid",
                     "KeyType": "HASH"
                   }  , 
                   
                   {
-                    "AttributeName": "username",
+                    "AttributeName": "email",
                     "KeyType": "RANGE"
                   } 
                   
@@ -93,6 +98,34 @@
                         }
                     ]
                 }
+                
+                ,"GlobalSecondaryIndexes": [
+                  
+                    {
+                        "IndexName": "email",
+                        "KeySchema": [
+                            
+                            {
+                                "AttributeName": "email",
+                                "KeyType": "HASH"
+                            }  , 
+                            
+                            {
+                                "AttributeName": "username",
+                                "KeyType": "RANGE"
+                            } 
+                            
+                        ],
+                        "Projection": {
+                            "ProjectionType": "ALL"
+                        },
+                        "ProvisionedThroughput": {
+                            "ReadCapacityUnits": "5",
+                            "WriteCapacityUnits": "5"
+                        }
+                    } 
+                  
+                ]
                 
             }
         }

@@ -9,8 +9,13 @@
    @include form-container();
  
 }
+.background {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
 h1 {
-    color: white;
+    color: black;
     font-weight: 700;
     line-height: 1.28571429;
     letter-spacing: .8px;
