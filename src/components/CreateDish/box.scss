@@ -1,0 +1,29 @@
+@import "../../variables";
+
+
+.dishContainer {
+    @include flexCenter(column);
+
+}
+
+input {
+    padding: 10px;
+    border-radius:10px;
+    margin: 10px;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+
+}
+
+.ingredientContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.componentList {
+    display: inline;
+}
+.valueInput {
+    margin: 15px;
+}
+.backContainer {
+    background-color: gray;
+}
